@@ -45,9 +45,76 @@ body{
     padding: 20px;
 }
 
+.conteudo {
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2);
+}
 .rodape{
     grid-area: rodape;
     background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0px 20px;
+    color: #444;
     /*position: sticky;
     bottom: 0px;*/  
 }
+
+.modulos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.modulo{
+    flex-basis: 32%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.modulo > h3{
+    margin: 0px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #1867c0;
+}
+
+.modulo > ul{
+    margin: 0px;
+    padding: 10px;
+    list-style: none;
+}
+
+.modulo > ul > li{
+    padding: 7px;
+    font-size: 1.2rem;
+    cursor: pointer;    
+}
+
+.modulo > ul > li > a{
+    display: flex;
+    text-decoration: none;
+    color: #222;
+}
+
+.modulo > ul >li:hover{
+    background-color: #EEE;
+}
+
+.modulo.verde{border: 2px solid #4caf50}
+.modulo.verde > h3 {background-color: #4caf50}
+.modulo.vermelho{border: 2px solid red}
+.modulo.vermelho > h3 {background-color: red}
+.modulo.azul{border: 2px solid blue}
+.modulo.azul > h3 {background-color: blue}
+.modulo.cor{border: 2px solid ?;}
+.modulo.cor > h3 {background-color: ?;}
+.modulo.cor > h3 {background-color: ?;}
